@@ -1,8 +1,8 @@
 import os
 os.system('cls')
 
-nota1 = int(input('Digite uma nota: '))
-nota2 = int(input('Digite uma sugunda nota: '))
+nota1 = float(input('Digite uma nota: '))
+nota2 = float(input('Digite uma sugunda nota: '))
 
 media = (nota1 + nota2) / 2
 
