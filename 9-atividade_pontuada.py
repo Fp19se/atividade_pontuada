@@ -3,7 +3,7 @@ os.system('cls')
 
 valor_total = float(input('Digite o valor do emprestimo: '))
 renda = float(input('Digite sua renda mensal: '))
-parcela = int(input('Digite o número de prestacoes: '))
+parcela = int(input('Digite o número de prestações: '))
 
 
 prestacao = valor_total / parcela
