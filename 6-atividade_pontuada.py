@@ -1,15 +1,16 @@
 import os
 os.system('cls')
 
-nota1 = int(input('Digite uma nota: '))
-nota2 = int(input('Digite uma sugunda nota: '))
+nota1 = float(input('Digite uma nota: '))
+nota2 = float(input('Digite uma segunda nota: '))
 
 media = (nota1 + nota2) / 2
 
-print('\nSua média:', media )
+print('\nSua média:', media)
+
 if media >= 6:
-print('Parabéns')
+    print('Parabéns')
 elif media >= 4.1 and media <= 5.9:
-print('Recuperação')
+    print('Recuperação')
 else:
-print('Reprovado')
+    print('Reprovado')
