@@ -1,16 +1,24 @@
 import os
 os.system('cls')
 
-nota1 = float(input('Digite uma nota: '))
-nota2 = float(input('Digite uma sugunda nota: '))
+produto = str(input('Qual o produto você deseja comprar: '))
+quant = int(input('Qual a quantidade adquirida: '))
+preco = float(input('Qual o preço do produto: '))
 
-media = (nota1 + nota2) / 2
+total = quant * preco
 
-print('\nSua média:', media )
-if media >= 6:
-    print('Parabéns')
-elif media >= 4.1 and media <= 5.9:
-    print('Recuperação')
+if quant <= 5:
+    desconto = total * 0.02
+elif quant > 5 and quant <= 10:
+    desconto = total * 0.03
 else:
-    print('Reprovado')
+    desconto = total * 0.05
 
+total_a_pagar = total - desconto
+
+print('\nSeu produto é: ', produto)
+print('A quantidade escolhida: ', quant)
+print('O preco do produto: R$', preco)
+print('O total deu: R$', total)
+print('O desconto é: R$', desconto)
+print('O valor a pagar é: R$', total_a_pagar)
