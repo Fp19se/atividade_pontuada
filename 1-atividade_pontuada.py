@@ -2,7 +2,7 @@ import os
 os.system('cls')
 
 A = int(input('Digite um número: '))
-B = int(input('Digite o sengundo número: '))
+B = int(input('Digite o segundo número: '))
 C = int(input('Digite o terceiro número: '))
 
 D = A + B
